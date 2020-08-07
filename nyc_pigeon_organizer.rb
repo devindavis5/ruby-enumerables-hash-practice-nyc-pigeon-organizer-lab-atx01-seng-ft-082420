@@ -9,7 +9,7 @@ final_results = data.each_with_object({}) do |(key, value), final_hash|
         final_hash[name] = {}
       end
       if !final_hash[name][key]
-        !final_hash[name][key] = []
+        final_hash[name][key] = []
       end
       final_hash[name][key].push(inner_key.to_s)
       end
