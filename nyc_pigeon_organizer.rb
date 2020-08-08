@@ -13,6 +13,7 @@ data.each_with_object({}) do |(key, value), final_hash|
          final_hash[name][key] = []
        end
          final_hash[name][key].push(inner_key.to_s)
+         binding.pry
          end
        end
    end
