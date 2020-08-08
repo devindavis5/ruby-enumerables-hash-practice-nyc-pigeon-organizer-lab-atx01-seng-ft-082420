@@ -16,5 +16,5 @@ final_results = data.each_with_object({}) do |(key, value), final_hash|
          end
        end
    end
-   final_results
+  binding.pry
  end
